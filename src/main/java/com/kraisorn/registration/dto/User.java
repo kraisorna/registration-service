@@ -55,6 +55,18 @@ public class User {
          this.password = password;
     }
     String password;
+    
+    @JsonIgnore
+    public String getSalt() { 
+         return this.salt;
+    }
+	//@JsonProperty("salt")
+	@JsonSetter("salt")
+	@Column(name = "salt")
+    public void setSalt(String salt) { 
+         this.salt = salt;
+    }
+    String salt;
 
     @JsonProperty("address")
     @Column(name = "address")

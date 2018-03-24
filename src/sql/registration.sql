@@ -41,6 +41,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL DEFAULT '0',
   `password` varchar(255) NOT NULL DEFAULT '0',
+  `salt` varchar(255) NOT NULL DEFAULT '0',
   `address` varchar(255) NOT NULL DEFAULT '0',
   `phone` varchar(50) NOT NULL DEFAULT '0',
   `reference_code` varchar(12) NOT NULL DEFAULT '0',

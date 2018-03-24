@@ -77,7 +77,7 @@ public class RegistrationController {
 		SecretKeyFactory f = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
 		byte[] hash = f.generateSecret(spec).getEncoded();
 		Base64.Encoder enc = Base64.getEncoder();
-		//user.setPassword(enc.encodeToString(salt));
+		user.setSalt(enc.encodeToString(salt));
 		user.setPassword(enc.encodeToString(hash));
 		
 		UserManager manager = new UserManager();
