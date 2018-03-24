@@ -109,7 +109,7 @@ public class User {
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("User [id=").append(id)
-			   .append(", userName=").append(username)
+			   .append(", username=").append(username)
 			   .append(", address=").append(address)
 			   .append(", phone=").append(phone)
 			   .append(", referenceCode=").append(reference_code)
